@@ -9,16 +9,17 @@ import { generate, getCardHtml } from './utils';
 import { Marker } from './models';
 
 @Component({
-  selector: 'ng-leaflet-universal',
-  template: `
+    selector: 'ng-leaflet-universal',
+    template: `
     <div class="map">
       <div class="map-frame">
         <div [id]="id"></div>
       </div>
     </div>
   `,
-  styleUrls: ['./map.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrls: ['./map.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class MapComponent implements AfterViewInit, OnChanges {
   @Output() mapEvent = new EventEmitter<Marker>();
