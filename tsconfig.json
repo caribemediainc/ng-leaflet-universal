@@ -6,18 +6,17 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "paths": {
       "ng-leaflet-universal": [
         "dist/ng-leaflet-universal/ng-leaflet-universal",
         "dist/ng-leaflet-universal"
       ]
     },
-    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "moduleResolution": "node",
