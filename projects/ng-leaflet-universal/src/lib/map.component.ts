@@ -1,7 +1,6 @@
 import { map, tileLayer, divIcon, Marker as LeafletMarker } from 'leaflet';
-import { AfterViewInit, Input, Output, EventEmitter } from '@angular/core';
+import { AfterViewInit, input, output, effect } from '@angular/core';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { OnChanges, SimpleChanges } from '@angular/core';
 import { FeatureGroup } from 'leaflet';
 import type { Map } from 'leaflet';
 
@@ -19,19 +18,21 @@ import { Marker } from './models';
   `,
   styleUrls: ['./map.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
-export class MapComponent implements AfterViewInit, OnChanges {
-  @Output() mapEvent = new EventEmitter<Marker>();
-  @Input() markers: Array<Marker> | null;
+export class MapComponent implements AfterViewInit {
+  mapEvent = output<Marker>();
+
+  markers = input<Array<Marker> | null>([]);
 
   id = generate('div');
   map: Map;
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes.markers && this.map) {
-      this.updateMarkers(this.markers);
+  #effet = effect(() => {
+    if (this.map) {
+      this.updateMarkers(this.markers());
     }
-  }
+  })
 
   ngAfterViewInit() {
     this.map = map(this.id).setView([18.4, -66.9], 4);
@@ -40,7 +41,7 @@ export class MapComponent implements AfterViewInit, OnChanges {
       attribution: 'Map data © OpenStreetMap contributors',
     }).addTo(this.map);
 
-    this.updateMarkers(this.markers);
+    this.updateMarkers(this.markers());
   }
 
   removeMarkers() {
