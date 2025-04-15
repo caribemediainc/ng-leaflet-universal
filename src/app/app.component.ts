@@ -2,6 +2,7 @@ import { Marker } from 'projects/ng-leaflet-universal/src/lib/models';
 import { Component } from '@angular/core';
 
 @Component({
+  standalone:false,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -75,7 +76,7 @@ export class AppComponent {
       card: {
         customHtml: /*html*/ `
         <div style="cursor: pointer">
-        <a>Av. Jonh F. Kennedy, Plaza Galería 360, Santo Domingo.</a> 
+        <a>Av. Jonh F. Kennedy, Plaza Galería 360, Santo Domingo.</a>
       </div>
         `,
       },
