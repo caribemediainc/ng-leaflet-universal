@@ -1,11 +1,7 @@
 {
-  "name": "@caribemediainc/ngx-leaflet-universal",
+  "name": "ngx-leaflet-universal",
   "version": "19.2.6",
   "description": "NgLeafletUniversal is an open source Angular module that extends and simplifies the Leaflet implementation for Angular.",
-  "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com"
-  },
   "peerDependencies": {
     "@angular/common": "^19.2.6",
     "@angular/core": "^19.2.6",
@@ -17,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caribemediainc/ng-leaflet-universal.git"
+    "url": "git+git+https://github.com/rareyesrd/ng-leaflet-universal.git"
   },
   "author": "Rafael Reyes, Christian De La Cruz",
   "maintainers": [
@@ -27,9 +23,9 @@
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/caribemediainc/ng-leaflet-universal.git/issues"
+    "url": "git+https://github.com/rareyesrd/ng-leaflet-universal.git/issues"
   },
-  "homepage": "https://github.com/caribemediainc/ng-leaflet-universal.git#readme",
+  "homepage": "git+https://github.com/rareyesrd/ng-leaflet-universal.git#readme",
   "keywords": [
     "angular",
     "leaflet",
