@@ -17,17 +17,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rareyesrd/ng-leaflet-universal.git"
+    "url": "git+https://github.com/caribemediainc/ng-leaflet-universal.git"
   },
   "author": "Rafael Reyes, Christian De La Cruz",
   "maintainers": [
-    "Jeffrey Mesa"
+    "Jeffrey Mesa",
+    "Smerlyn Javier Eusebio Bonifacio",
+    "John Michel Delibua"
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/rareyesrd/ng-leaflet-universal.git/issues"
+    "url": "https://github.com/caribemediainc/ng-leaflet-universal.git/issues"
   },
-  "homepage": "https://github.com/rareyesrd/ng-leaflet-universal.git#readme",
+  "homepage": "https://github.com/caribemediainc/ng-leaflet-universal.git#readme",
   "keywords": [
     "angular",
     "leaflet",
