@@ -1,6 +1,6 @@
 {
   "name": "@caribemediainc/ngx-leaflet-universal",
-  "version": "18.2.15",
+  "version": "18.2.16",
   "description": "NgLeafletUniversal is an open source Angular module that extends and simplifies the Leaflet implementation for Angular.",
   "publishConfig": {
     "access": "restricted",
