@@ -19,7 +19,7 @@ import { Marker } from './models';
   `,
   styleUrls: ['./map.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone:false
+  standalone:true
 })
 export class MapComponent implements AfterViewInit, OnChanges {
   @Output() mapEvent = new EventEmitter<Marker>();

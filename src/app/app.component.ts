@@ -1,11 +1,15 @@
 import { Marker } from 'projects/ng-leaflet-universal/src/lib/models';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { MapComponent } from 'ng-leaflet-universal';
+import { CommonModule } from '@angular/common';
 @Component({
-  standalone:false,
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  imports: [MapComponent, CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   title = 'angular-leaflet-universal';
